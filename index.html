@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    
+    <title>Cadastro de Clientes</title>
+</head>
+<body>
+    <header>
+        <h1>Cadastro de Clientes</h1>
+    </header>
+
+   
+    <main>
+        <button id="cadastroCliente">Cadastrar Cliente</button>
+
+        <div id="div-table">
+        <table id="tableClient">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>Celular</th>
+                    <th>Serviço Contratado</th>
+                    <th>Valor</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>0</td>
+                    <td>Theo</td>
+                    <td>(24) 99267-5080</td>
+                    <td>Perfil Comum</td>
+                    <td>R$70,00</td>
+                    <td>
+                        <span id="bt-remover" class="material-symbols-outlined">
+                            delete
+                            </span>
+                    </td>
+                </tr>
+            </tbody>
+        </table><!--TABLE CLIENT-->
+        </div><!--DIV TABLE-->
+        <br>
+        <!--MODAL-->
+        
+        <div id="div-cadastro" class="off">
+                <div id="container-cadastro">
+                    <label for="#nome">Nome: </label>
+                    <input name="Nome" type="text" id="nome">
+
+                    <label for="#celular">Celular: </label>
+                    <input name="Tel" type="number" id="celular">
+
+                    <label for="#servicoContratado">Serviço: </label>
+                    <select name="Serviço" id="servicoContratado"></select>
+
+                    <label for="#valor">Valor: </label>
+                    <input name="Valor" type="number" id="valor">
+                    <div id="bts-modal">                
+                        <button id="bt-addClient" type="submit">Adicionar Cliente</button>
+                        <button id="bt-closeModal">Cancelar</button>
+                    </div><!--BTS MODAL-->
+                </div><!--CONTAINER CADASTRO-->
+        </div><!--DIV CADASTRO-->
+        
+    </main>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
